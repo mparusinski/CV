@@ -1,0 +1,268 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{michal}{parusinski}{ingénieur logiciel - technical leader} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+Villa Liana,
+17 Avenue Paul Arène
+Nice, 06000
+France
+~
++33 (0)6 52 22 90 13
+~
+\href{mailto:michal@parusinski.me}{michal@parusinski.me}
+% \href{http://michal.parusinski.me}{michal.parusinski.me}
+\section{langues}
+    {\def\arraystretch{0.3}%
+    \begin{tabular}{l r}
+        \emph{français} & couramment \\
+        \emph{anglais} & couramment \\
+        \emph{polonais} & couramment \\
+        \emph{allemand} & base \\
+        \emph{esperanto} & base \\
+    \end{tabular}%
+    }
+\section{programmation}
+    {\def\arraystretch{0.3}%
+    \begin{tabular}{l r}
+        \emph{C / C++} & expert \\
+        \emph{Java / Scala  } & avancé \\
+        \emph{Python} & avancé \\
+        \emph{Haskell} & expert \\
+        \emph{PHP} & base \\
+    \end{tabular}%
+    }
+\section{informatique}
+    {\def\arraystretch{0.3}%
+    \begin{tabular}{ r }
+        \emph{Sécurité Informatique} \\
+        \emph{Unix/Linux} \\
+        \emph{Agile} \\
+    \end{tabular}%
+    }
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{éducation}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2008--2012}
+{master {\normalfont Msci. Mathematics \& Computer Science}}
+{Imperial College London}
+{
+    \emph{Obtenue avec mention très bien}
+	\medbreak
+    1\textsuperscript{re} année : Application de la \emph{méthode des moindres carrées} dans le traitement d’image.
+	\smallbreak
+    2\textsuperscript{e} année : Application du revêtement universel en topologie dans la théorie des graphes.
+	\smallbreak
+    3\textsuperscript{e} année : Automatisation des démonstrations et recherche de contre exemples dans la logique de description.
+	\smallbreak
+    4\textsuperscript{e} année : Factorisation par les courbes elliptiques et la cryptographie RSA.
+}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{éxperience}
+
+\subsection{CDI}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2015--2017}
+{Amadeus}
+{Sophia-Antipolis, France}
+{\emph{Ingénieur logiciel et leadeur technique}
+\medbreak
+J’ai travaillé sur les systèmes de réservation de voiture, d'assurance et de croisière; à la
+fois côté "backend" et "frontend".
+\smallbreak
+J’ai travaillé sur le projet de réécrire le système de
+    réservation opérant sur mainframe en un système de réservation bâti sur une
+    architecture moderne distribuée sur des serveurs Linux (TPF Deco).
+\bigbreak %
+}
+
+\entry
+{2013--2015}
+{IBM}
+{Hursley, Royaume-Uni}
+{\emph{Ingénieur logiciel}
+\medbreak
+QA pour SPSS Modeler et SPSS Entity Analytics : J’ai participé à la création de
+    tests et au maintien de plusieurs machines de test (Unix and Windows).
+\smallbreak
+Ingénieur logiciel pour SPSS Modeler : Développement de fonctionnalité comme le
+    support pour de nouvelles architectures et l’intégration avec le cloud.
+\smallbreak
+1\textsuperscript{er} projet "Giveback" : Projet avec l’Université de Winchester sur
+    l’établissement d’un curriculum de Business Analytics.
+\smallbreak
+2\textsuperscript{e} projet "Giveback" : Conception d’une plateforme web en PHP, JavaScript et
+    Dojo.
+\bigbreak %
+}
+
+\entry
+{2012--2013}
+{Université Catholique de Louvain}
+{Louvain-la-Neuve, Belgique}
+{\emph{Assistant de recherche}
+\medbreak
+J’ai travaillé sur un projet de recherche sur les fonctions physiquement
+unclonable
+(Physically Unclonable Function) basé sur la consommation de courant. J’ai utilisé la
+\emph{régression logistique} pour attaquer le PUF.
+}
+%------------------------------------------------
+
+\end{entrylist}
+
+\newpage
+
+\subsection{stages}
+
+\begin{entrylist}
+
+\entry
+{Été 2011}
+{Siemens}
+{Princeton, États-Unis}
+{\emph{Stagiare d'été}
+\medbreak
+J’ai contribué à une plateforme d’imagerie médicale pour la simulation du cœur et
+l’assistance à la chirurgie cardiaque. Le codage a été effectué
+en C++, OpenGL et OpenMP.
+\bigbreak
+}
+
+\entry
+{2011--2012}
+{Imperial College London}
+{Londres, Royaume-Uni}
+{\emph{Undergraduate Teaching Assistant}
+\medbreak
+    J’ai assisté avec les cours de 1\textsuperscript{re} année en logique à Imperial College.
+\bigbreak
+}
+
+\entry
+{Été 2010}
+{Imperial College London}
+{Londres, Royaume-Uni}
+    {\emph{Stagiaire Recherche (UROP)}
+	\medbreak
+    J’ai contribué à une plateforme de simulation de l’océan au sein du groupe
+    de recherche AMCG. J’ai travaillé 
+    sur l'adaptation des données pour la méthode des éléments finis.
+	\bigbreak
+}
+
+\entry
+{Été 2009}
+{Personal Audio Ltd.}
+{Sydney, Australie}
+    {\emph{Ingénieur logiciel}
+	\medbreak
+    J’ai travaillé dans une start-up centrée sur l’amélioration de l’effet d'immersion dans les
+    jeux vidéos. J’ai créé sur l’interface utilisateur en QT.
+	\bigbreak
+}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{récompenses}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2008,2001}
+{Gloucester Research Prize}
+{Imperial College London}
+{Distinction pour excellence académique}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{intérêts}
+
+\textbf{professional:} apprentissage automatique (machine learning), sciences
+des données, sécurité informatique, serveur informatique, UNIX\\
+\textbf{personal:} arts martiaux, jeux de go, jeux de plateau
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{publications}
+
+\textbf{publication scientifique:} Coauteur de la publication scientifique sur
+les fonctions physiquement unclonable
+\href{https://perso.uclouvain.be/fstandae/PUBLIS/134.pd}{https://perso.uclouvain.be/fstandae/PUBLIS/134.pd}
+\\
+\textbf{brevet:} Coauteur du brevet U.S. Patent
+\href{http://patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/9582263}{9,582,263} sur la technologie portative
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
