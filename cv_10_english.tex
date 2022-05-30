@@ -20,6 +20,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage{tikz}
+
+\newcommand{\fc}{\tikz\draw[black,fill=black] (0,0) circle (.5ex);}%
+\newcommand{\ec}{\tikz\draw[black,fill=white] (0,0) circle (.5ex);}%
 
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 
@@ -33,39 +37,38 @@
 
 \begin{aside} % In the aside, each new line forces a line break
 \section{contact}
-2 rue du Général Streicher
-Molsheim, 67120
-France
-~
-+33 (0)6 52 22 90 13
-~
-\href{mailto:michal@parusinski.me}{michal@parusinski.me}
-% \href{http://michal.parusinski.me}{michal.parusinski.me}
+    \href{mailto:michal@parusinski.me}{michal@parusinski.me}
+    \href{https://michal.parusinski.me}{michal.parusinski.me}
 \section{languages}
     {\def\arraystretch{0.3}%
     \begin{tabular}{l r}
-        \emph{french} & native \\
-        \emph{english} & native \\
-        \emph{polish} & native \\
-        \emph{german} & basic \\
+        \emph{french} & \fc\fc\fc\fc\fc \\
+        \emph{english} & \fc\fc\fc\fc\fc \\
+        \emph{polish} & \fc\fc\fc\fc\ec \\
+        \emph{german} & \fc\fc\ec\ec\ec \\
     \end{tabular}%
     }
 \section{programming}
     {\def\arraystretch{0.3}%
     \begin{tabular}{l r}
-        \emph{C / C++} & advanced \\
-        \emph{Python} & advanced \\
-        \emph{Haskell} & advanced \\
-        \emph{Java} & advanced
+        \emph{C / C++} & \fc\fc\fc\fc\ec \\
+        \emph{Java} & \fc\fc\fc\ec\ec \\
+        \emph{Python} & \fc\fc\fc\fc\ec \\
+        \emph{Haskell} & \fc\fc\fc\fc\ec \\
+        \emph{Javascript} & \fc\fc\fc\ec\ec \\
+        \emph{PHP} & \fc\fc\ec\ec\ec \\
     \end{tabular}%
     }
 \section{IT skills}
     {\def\arraystretch{0.3}%
     \begin{tabular}{ r }
-        \emph{Web servers} \\
         \emph{Unix/Linux} \\
-        \emph{Docker} \\
-        \emph{Machine Learning} \\
+        \emph{Agile methods} \\
+        \emph{Object oriented} \\
+        \emph{Machine learning} \\
+        \emph{Distributed computing} \\
+        \emph{Cloud infrastructure} \\
+        \emph{Cybersecurity} \\
     \end{tabular}%
     }
 \end{aside}
@@ -103,30 +106,18 @@ France
 
 
 \entry
-{2019 (ongoing)}
-{SII}
-{Strasbourg, France}
-{\emph{IT consultant}
-\medbreak
-Building an infrastructure to collect web traffic data for several
-major european banks.
-\bigbreak %
-}
-
-\entry
-{2018--2019}
-{SERTIT ICube}
+{2018--2022}
+{ICube-SERTIT}
 {Illkirch Graffenstaden, France}
-{\emph{Research engineer}
+{\emph{Software engineer}
 \medbreak
-R\&D work on imaging algorithms and machine learning for satellite image 
-processing, including deep learning.
+Automating extraction of geographical information from satellite imagery
+using deep learning et AI model generalization through GAN data augmentation.
 \smallbreak
-Built tools to compute bonus pay for on duty work.
+Development of a Software as a Service platform for end-to-end burnt areas
+and floods mapping pipeline.
 \smallbreak
-Setup and configuration of web-based applications : GitLab,
-    OpenProject and GeoServer. 
-\bigbreak %
+Web mapping platform for SERTIT's mapping products
 }
 
 \entry

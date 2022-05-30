@@ -20,6 +20,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage{tikz}
+
+\newcommand{\fc}{\tikz\draw[black,fill=black] (0,0) circle (.5ex);}%
+\newcommand{\ec}{\tikz\draw[black,fill=white] (0,0) circle (.5ex);}%
 
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 
@@ -33,38 +37,37 @@
 
 \begin{aside} % In the aside, each new line forces a line break
 \section{contact}
-2 rue du Général Streicher
-Molsheim, 67120
-France
-~
-+33 (0)6 52 22 90 13
-~
 \href{mailto:michal@parusinski.me}{michal@parusinski.me}
-% \href{http://michal.parusinski.me}{michal.parusinski.me}
+\href{https://michal.parusinski.me}{michal.parusinski.me}
 \section{langues}
     {\def\arraystretch{0.3}%
     \begin{tabular}{l r}
-        \emph{français} & courant \\
-        \emph{anglais} & courant \\
-        \emph{polonais} & courant \\
-        \emph{allemand} & bases \\
+        \emph{français} & \fc\fc\fc\fc\fc \\
+        \emph{anglais} & \fc\fc\fc\fc\fc \\
+        \emph{polonais} & \fc\fc\fc\fc\ec \\
+        \emph{allemand} & \fc\fc\ec\ec\ec \\
     \end{tabular}%
     }
 \section{programmation}
     {\def\arraystretch{0.3}%
     \begin{tabular}{l r}
-        \emph{C / C++} & avancé \\
-        \emph{Python} & avancé \\
-        \emph{Haskell} & avancé \\
+        \emph{C / C++} & \fc\fc\fc\fc\ec \\
+        \emph{Java} & \fc\fc\fc\ec\ec \\
+        \emph{Python} & \fc\fc\fc\fc\ec \\
+        \emph{Haskell} & \fc\fc\fc\fc\ec \\
+        \emph{Javascript} & \fc\fc\fc\ec\ec \\
+        \emph{PHP} & \fc\fc\ec\ec\ec 
     \end{tabular}%
     }
 \section{informatique}
     {\def\arraystretch{0.3}%
     \begin{tabular}{ r }
-        \emph{nginx} \\
-        \emph{Linux} \\
-        \emph{Docker} \\
+        \emph{Unix/Linux} \\
+        \emph{Agile} \\
+        \emph{Orienté objet} \\
         \emph{Machine Learning} \\
+        \emph{Calcul distribué} \\
+        \emph{Infra. cloud} \\
     \end{tabular}%
     }
 \end{aside}
@@ -83,7 +86,7 @@ France
 {2008--2012}
 {master {\normalfont Msci. Mathematics \& Computer Science}}
 {Imperial College London}
-{}
+{Obtenu avec mention très bien}
 
 %------------------------------------------------
 
@@ -103,28 +106,20 @@ France
 
 
 \entry
-{2019 (en cours)}
-{SII}
-{Strasbourg, France}
-{\emph{Consultant en développement}
-\medbreak
-Travail sur un projet de collecte de données de navigations web clients
-\bigbreak %
-}
-
-\entry
-{2018--2019}
-{SERTIT ICube}
+{2018--2022}
+{ICube-SERTIT}
 {Illkirch Graffenstaden, France}
-{\emph{Ingénieur de recherche}
+{\emph{Ingénieur logiciel}
 \medbreak
-Création d'outils pour la cartographie et la détection d’objet dans les images 
-satellitaires en utilisant des algorithmes d’imagerie et d’apprentissage
-automatique dont l’apprentissage profond (Deep Learning).
+Automatisation d'extraction d'information à partir d'image satellites utilisant
+    l'apprentissage profond (deep learning) et généralisation de modèle IA en
+    utilisant l'augmentation de donnée via GANs.
 \smallbreak
-Participation à la cartographie rapide et création d'outil pour calculer
-les primes d'astreintes.
-\bigbreak %
+    Mise en place d'un SAAS (logiciel en tant que service) pour une chaîne
+    bout en bout pour la cartographie de zones brûlées et d'inondations
+\smallbreak
+Mise en place d'une plateforme de cartes web pour les produits cartographiques
+du SERTIT.
 }
 
 \entry
@@ -133,8 +128,8 @@ les primes d'astreintes.
 {Sophia-Antipolis, France}
 {\emph{Ingénieur logiciel et leadeur technique}
 \medbreak
-J’ai travaillé sur les systèmes de réservation de voiture, d'assurance et de croisière; à la
-fois côté "backend" et "frontend".
+Travail sur les systèmes de réservations de voitures, d'assurances et de 
+croisières; à la fois coté backend et frontend.
 \smallbreak
 Travail de réécriture du système de
     réservation opérant sur mainframe IBM en un système bâti sur une
