@@ -21,6 +21,7 @@
 
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 \usepackage{tikz}
+\usepackage{array}
 
 \newcommand{\fc}{\tikz\draw[black,fill=black] (0,0) circle (.5ex);}%
 \newcommand{\ec}{\tikz\draw[black,fill=white] (0,0) circle (.5ex);}%
@@ -29,7 +30,7 @@
 
 \begin{document}
 
-\header{Michal }{Parusinski}{Software Developer} % Your name and current job title/field
+\header{Michal }{Parusinski}{Lead Software Engineer} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -41,7 +42,7 @@
     \href{https://michal.parusinski.me}{michal.parusinski.me}
 \section{languages}
     {\def\arraystretch{0.3}%
-    \begin{tabular}{l r}
+    \begin{tabular}{m{5em} m{5em}}
         \emph{french} & \fc\fc\fc\fc\fc \\
         \emph{english} & \fc\fc\fc\fc\fc \\
         \emph{polish} & \fc\fc\fc\fc\ec \\
@@ -50,7 +51,7 @@
     }
 \section{programming}
     {\def\arraystretch{0.3}%
-    \begin{tabular}{l r}
+    \begin{tabular}{m{5em} m{5em}}
         \emph{C / C++} & \fc\fc\fc\fc\ec \\
         \emph{Java} & \fc\fc\fc\ec\ec \\
         \emph{Python} & \fc\fc\fc\fc\ec \\
@@ -61,7 +62,7 @@
     }
 \section{IT skills}
     {\def\arraystretch{0.3}%
-    \begin{tabular}{ r }
+    \begin{tabular}{l}
         \emph{Unix/Linux} \\
         \emph{Agile methods} \\
         \emph{Object oriented} \\
